@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Front End Projects</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <main>
-        <header>
-            <h1> All links</h1>
-        </header>  
-        <main class="container">
-            <div class="item">
-                <a href="/bono-landing-form/">Bono Landing form</a>
-            </div>
-            <div class="item">
-                <a href="/lumina-website/">Lumina</a>
-            </div>
-            
-
-        </main>
+  <body class="container wrapper">
+    <header class="container header-flex">
+      <h1 class="hero">Faiyaz's Frontend Portfolio</h1>
+    </header>
+    <main class="container items-flex">
+      <div class="item">
+        <h3 class="project_name">Bono Landing Form</h3>
+        <p>Basic landing page.</p>
+        <a href="/bono-landing-form/" class="btn">View</a>
+      </div>
+      <div class="item">
+        <h3 class="project_name">Lumina website</h3>
+        <p>Professional Website</p>
+        <a href="/lumina-website/" class="btn">view</a>
+      </div>
     </main>
+
     <script src="index.js"></script>
   </body>
 </html>
