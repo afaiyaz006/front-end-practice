@@ -21,5 +21,5 @@ The projects featured on the page include:
 - [Lumina Website](https://front-end-practice.pages.dev/lumina-website)
 - [Presentation Website](https://front-end-practice.pages.dev/presentation-website)
 - [Tutor Website](https://front-end-practice.pages.dev/tutor-website)
-- [EMS 2.0](https://front-end-practice.pages.dev/bootstrap/ems-2.0)
-- [Blog Website](https://front-end-practice.pages.dev/bootstrap/blog-website)
+- [EMS 2.0](https://front-end-practice.pages.dev/bootstrap/ems_2.0)
+- [Blog Website](https://front-end-practice.pages.dev/bootstrap/blog_website)
