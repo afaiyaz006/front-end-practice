@@ -1,6 +1,6 @@
 # Front-End Practice Repository
 
-Welcome to the **Front-End Practice** repository! This repository is a collection of front-end projects, exercises, and challenges aimed at improving your front-end development skills. Whether you're learning HTML, CSS, JavaScript, or working on mastering modern frameworks, this repository will help you build your expertise with hands-on projects.
+Welcome to the **Front-End Practice** repository! This repository is a collection of front-end projects, exercises, and challenges aimed at improving my front-end development skills.
 
 ## Table of Contents
 
