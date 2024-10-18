@@ -7,7 +7,7 @@
 
 .wrapper {
     min-height: 200vh;
-    background:url('../images/cool-background.png') no-repeat center/cover;
+    background:url('../images/New_banner.png') no-repeat center/cover;
     
   }
 .container{
@@ -39,7 +39,8 @@
 .items-flex,.items-flex-col,.items-flex-inside{
     display: flex;
     flex:1;
-    background-color: #c351ba;
+    /*background-color: #c351ba;*/
+    background-color: #5356FF;
     margin: 5px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -52,7 +53,7 @@
     border-left-width: 1px;
     border-top-width: 1px;
     gap:5px;
-    padding: 2rem;
+    padding: 1rem;
 }
 .items-flex-col{
     flex-direction: column;
@@ -172,6 +173,9 @@ img{
 @media(max-width:768px){
     .items-flex{
         flex-direction: column;
+    }
+    .items-flex{
+        font-size: 15px;
     }
     .items-flex-inside{
         flex-direction: column;
