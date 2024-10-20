@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Poppins",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul {
+    list-style-type: none;
+}
+
+.uporer-chobi{
+    
+    background: url('../images/header-background.jpg') no-repeat center/cover;
+    height: 100vh;
+   
+}
+body{
+    display: block;
+    margin:0px;
+    padding:0px;
+
+}
+
+/* navs*/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 80px;
+    margin-left: 3rem ;
+  
+}
+.nav-items{
+
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+.nav-item{
+    color:aliceblue;
+    font-size:15px;
+}
+
+
+/* Section hero*/
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    padding-left: 10rem;
+
+}
+.hero-part{
+    display: flex;
+    flex-direction: column;
+    color:antiquewhite;
+    font-size: 30px;
+    margin-top:-5rem;
+    gap: 0rem;
+}
+.hero-button{
+    font-family: "Poppins",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:inline-block;
+    background-color: #DBA248;;
+    border: 0;
+    border-radius:35px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color:rgb(20, 20, 20);
+    font-size: 19px;
+    cursor:pointer;
+    width: 250px;
+    
+}
+.hero-text{
+    margin-top:-1rem;
+    font-size:20px;
+}
+.hero-button:hover{
+    background-color: #f19f19;
+}
+
+.wave{
+    margin-top:-3rem;
+}
+/*chapter*/
+.chapter-container,.chapter-summary-container,.summary-container,.takeaways-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+   
+}
+
+.chapter-text,.summary-text,.chapter-summary-text,.takeaways-text{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 20px;
+    width: 650px;
+}
+.takeaways-text{
+    text-align: center;
+}
+.chapter-heading,.chapter-summary-heading,.summary-heading,.takeaways-heading{
+    font-family:"Poppins",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(41, 40, 40);
+}
+.chapter-gallery{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+
+}
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+}
+.gal-image{
+    height:150px;
+    width: 250px;
+
+}
+.shape{
+    clip-path: polygon(0 83%, 100% 83%, 100% 100%, 0% 100%);
+    background-color:blueviolet;
+    margin-top: -2rem;
+}
+/*summary*/
+.summary-card-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left:5rem;
+    padding-right:5rem;
+    padding-top:2rem;
+    gap:1rem;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.card-item:hover{
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+.card-item img{
+    height: 150px;
+    width: 150px;
+}
+.card-item p{
+    text-align: center;
+}
+/*objectives*/
+.objectives{
+    display: flex;
+    flex-direction: column;
+    padding-left:10rem;
+    padding-right:10rem;
+    gap:2rem;
+}
+.objective{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.objective-heading{
+    background-color: #fd556c;
+    padding:0.5rem;
+    color:white;
+    text-align: left;
+    font-size:larger;
+ 
+    
+}
+.objective p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Who container*/
+.who-container{
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+}
+.who-container img{
+    flex:1;
+    width: 100%;
+    
+}
+
+.who-flex-item{
+    display:flex;
+    flex:1;
+    color:white;
+    max-height:480px;
+    background-color: #fd556c;
+}
+.who-text-wrapper{
+    padding: 3rem;
+}
+/*takeaways*/
+.takeaway-cards{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+}
+.takeaway-card{
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.takeaway-text-wrap{
+    display:flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+@media(max-width:768px){
+    .hero-section{
+        flex-direction: column;
+        padding:0px;
+        margin-top:1rem;
+        
+    }
+    .hero-part{
+        font-size: 30px;
+    }
+    .hero-text{
+        font-size: 20px;
+    }
+    .hero-img{
+        width:200px;
+        height:200px;
+    }
+    .chapter-text{
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .summary-card-flex{
+        flex-direction: column;
+    }
+
+    
+}
+@media(max-width:900px){
+    .hero-button{
+        margin-right:0px;
+    }
+    .who-container{
+        flex-direction: column;
+    }
+    .chapter-gallery { grid-template-columns: repeat(1, 1fr); }
+    .takeaway-cards{
+      
+        grid-template-columns: repeat(1,1fr);
+    }
+}
