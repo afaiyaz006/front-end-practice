@@ -74,7 +74,7 @@ a{
     margin-top:-5rem;
     gap: 0rem;
 }
-.hero-button{
+.hero-button,.see-details-button,.stats-button,.subscribe-button{
     font-family: "Poppins",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:inline-block;
     background-color: #DBA248;;
@@ -92,8 +92,12 @@ a{
     margin-top:-1rem;
     font-size:20px;
 }
-.hero-button:hover{
+.hero-button:hover,.see-details-button:hover,.stats-button:hover,.subscribe-button:hover{
     background-color: #f19f19;
+}
+.see-details-button{
+    width:160px;
+    
 }
 
 .wave{
@@ -236,7 +240,144 @@ a{
 .takeaway-text-wrap{
     display:flex;
     flex-direction: column;
+    font-size: 15px;
+}
+
+/*Course detail section*/
+
+.course-detail-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+    margin: 2rem;
+    gap:1rem;
+}
+.course-image{
+    justify-self:auto;    
+
+}
+.author-image{
+    justify-self:auto;
+}
+.course-image img,.author-image img{
+    height: 300px;
+    width: 400px;   
+    
+}
+.author-text-container{
+    justify-self: center;
+     
+}
+
+.author-text-container{
+    margin-top:1rem;
+}
+.author-text-container .see-details-button{
+    margin-top: 3rem;
+}
+.author-feature{
+   
+    margin-bottom:0.3rem
+}
+
+/*course */
+.get-course-section{
+    background: url('../images/stats-background.jpg') no-repeat center/cover ;
+    z-index: 1;
+    padding: 1rem;
+
+}
+.course-flex{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    align-items: center;
+
+}
+.course-flex img{
+    width:600px;
+    height:480px;
+}
+
+/*stats*/
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    gap:1rem;
+}
+.stats-report{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: left;
+}
+.stats-data h1{
+    font-size: 35px;
+    text-align: center;
+    line-height: 1.5px;
+}
+.stats-data p{
+    font-size: small;
+    text-align: center;
+}
+.stats-button{
+    width:200px;
+}
+
+
+/*newsletter*/
+.newsletter-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+
+}
+input{
+    border:none;
+}
+.subscribe-button{
+    width: 150px;
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+    padding:0px;
+    margin-top:2rem;
+
+}
+
+/*social*/
+.social-section{
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-size: 10px;
+    background-color:rgb(32, 32, 32);
+    color:white;
+    padding: 1rem;
+    gap:5rem;
+    text-align: center;
+}
+footer a{
+    color:wheat;
+    align-items: center;
 }
 @media(max-width:768px){
     .hero-section{
