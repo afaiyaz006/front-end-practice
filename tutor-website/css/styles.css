@@ -3,44 +3,71 @@
 *::after {
     box-sizing: border-box;
     font-family: "Poppins",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
 }
 ul {
     list-style-type: none;
 }
 
 .uporer-chobi{
-    
     background: url('../images/header-background.jpg') no-repeat center/cover;
     max-height: 700px;
     overflow-x: hidden;
     position: relative;
-   
 }
+
 body{
     display: block;
     margin:0px;
     padding:0px;
     z-index:0;
-
-
-
+    
 }
 
 /* navs*/
-.navbar{
+.navbar,.navbar-while-scrolling{
+    background: transparent;
     width:1366px;
     display: flex;
     flex-direction: row;
-    flex:1;
     justify-content: space-between;
     padding-left: 3rem;
     padding-right: 3rem;
     align-items: center;
     position: fixed; 
-    justify-self: center;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 2000;
+
  
    
     
+}
+.navbar-while-scrolling{
+    background:#fd556c;
+    backdrop-filter: blur(1rem);
+    
+}
+.mobile-nav-items{
+  
+    top: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    opacity: 0.95;
+
+    padding-right: 5rem;
+    text-align: left;
+    padding-bottom: 10rem;
+    color: white;
+    position: absolute;
+    font-size:25px;
+
+
+}
+
+.mobile-nav-items.active{
+    transform: translateX(0);
 }
 .burger-menu{
     display: none;
@@ -58,7 +85,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    
+    z-index: 1000;
     
 }
 a{
@@ -146,6 +173,10 @@ a{
     margin-right: 20rem;
  
 }
+.takeaways-container{
+    margin:3rem;
+
+}
 .takeaways-text{
     text-align: center;
 }
@@ -157,11 +188,18 @@ a{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap:2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
 }
 .gallery-item{
     display: flex;
     flex-direction: column;
+    transition: transform .2s;
+}
+.gallery-item:hover{
+    transform: scale(1.5);
+    
 }
 .gal-image{
     height:150px;
@@ -249,12 +287,14 @@ a{
 }
 .who-text-wrapper{
     padding: 3rem;
+    
 }
 /*takeaways*/
 .takeaway-cards{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap:1rem;
+    padding:3rem;
 }
 .takeaway-card{
     display:flex;
@@ -275,24 +315,29 @@ a{
 .course-detail-section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 3rem;
-    margin: 2rem;
+    padding: 1rem;
+    margin:5rem;
     gap:1rem;
+    justify-items: start;
 }
 .course-image{
-    justify-self:auto;    
-
+    justify-self:center; 
+    
 }
 .author-image{
-    justify-self:auto;
+    justify-self:center;
+    
 }
 .course-image img,.author-image img{
     height: 300px;
     width: 400px;   
+
     
 }
 .author-text-container{
-    justify-self: center;
+    justify-self:right; 
+   
+    
      
 }
 
@@ -322,7 +367,7 @@ a{
 
 }
 .course-flex img{
-    width:600px;
+    width:650px;
     height:480px;
 }
 
@@ -389,6 +434,14 @@ input{
     display: flex;
     flex-direction: row;
     gap:1rem;
+    margin-bottom:30px;
+}
+
+.burger-button{
+    color:white; 
+    border-color: black;
+    border-width: 5px;
+    display: none;
 }
 footer{
     display: flex;
@@ -405,6 +458,30 @@ footer{
 footer a{
     color:wheat;
     align-items: center;
+    
+}
+
+.contact-hero{
+    display: flex;
+    background-color: #fd556c;
+    color:white;
+    font-size:30px;
+    padding:5rem;
+}
+.contact-content{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top:5rem;
+    padding-left:15rem;
+    padding-right:15rem;
+    padding-bottom:15rem;
+}
+.form-flex{
+    display: grid;
+    flex:1;
+    width: 100%;
+    gap:2rem;
 }
 @media(max-width:768px){
     
@@ -438,8 +515,20 @@ footer a{
     
 }
 @media(max-width:1000px){
+    .navbar{
+        justify-content: left;
+        gap:5rem;
+        margin:-1rem;
+        position:fixed;
+
+    }
+    
+    .burger-button{
+        display: block;
+    }
     .hero-section{
         align-items: center;
+        gap: 1rem;
     }
     .hero-wrapper{
         flex-direction: column;
@@ -465,7 +554,7 @@ footer a{
     }
     .nav-item{
         display: none;
-
+        
     }
     .burger-menu{
         display: block;
@@ -492,12 +581,25 @@ footer a{
     .course-detail-section{
         grid-template-columns: repeat(1,1fr);
     }
+    
+    .course-detail-section{
+        margin:0rem;
+    }
+    .hero-img{
+        max-width:300px;
+        max-height:200px;
+    }
     .course-flex{
+        display: flex;
         flex-direction: column;
     }
-   
-    
-
-    
+    .course-flex img{
+        height: 300px;
+        width: 300px;
+        
+    }
+    .stats-report{
+        flex-direction: column;
+    }
    
 }

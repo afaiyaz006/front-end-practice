@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -26,8 +27,10 @@
     <main class="main">
       <nav class="navbar">
         <img src="./images/logo.svg" class="logo" />
-        <div class="burger-menu">
-          <i class="fa-solid fa-burger fa-2x"></i>
+        <div class="burger-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
         </div>
         
         <ul class="nav-items">
@@ -36,19 +39,19 @@
             <a href="#" class="nav-item"> Home </a>
           </li>
           <li>
-            <a href="#" class="nav-item"> Chapters </a>
+            <a href="#chapters" class="nav-item"> Chapters </a>
           </li>
           <li>
-            <a href="#" class="nav-item"> Summary </a>
+            <a href="#course-summary" class="nav-item"> Summary </a>
           </li>
           <li>
-            <a href="#" class="nav-item"> Takeaways </a>
+            <a href="#takeaways" class="nav-item"> Takeaways </a>
           </li>
           <li>
-            <a href="#" class="nav-item"> Author </a>
+            <a href="#author" class="nav-item"> Author </a>
           </li>
           <li>
-            <a href="#" class="nav-item"> Contact </a>
+            <a href="contact.html" class="nav-item"> Contact </a>
           </li>
           <li class="nav-item">
             <i class="fa-brands fa-facebook fa-2x" style="color: white"></i>
@@ -58,7 +61,46 @@
           </li>
           
         </ul>
-        
+        <div class="mobile-nav-items">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#chapters">Chapters</a>
+            </li>
+            <li>
+              <a href="#course-summary">Summary</a>
+            </li>
+            <li>
+              <a href="#takeaways">Takeaways</a>
+            </li>
+            <li>
+              <a href="#author">Author</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Follow Us On Facebook"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                aria-label="Follow Us On Twitter"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
         
       </nav>
 
@@ -67,8 +109,7 @@
           <div class="hero-part">
             <h1>Create your own video courses</h1>
             <p class="hero-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-              illum.
+              Dive deep into the world of creativity and learn to craft stunning videos that captivate your audience. 
             </p>
 
             <button class="hero-button">$29 Get course</button>
@@ -103,15 +144,12 @@
           ></path>
         </svg>
       </div>
-      <section class="chapters">
+      <section id="chapters" class="chapters">
         <div class="chapter-container">
           <h1 class="chapter-heading">What will you learn?</h1>
           <div class="shape"><span>&&&&&</span></div>
           <p class="chapter-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum sed
-            quibusdam ipsam porro obcaecati corrupti itaque impedit dignissimos
-            saepe sapiente explicabo molestias nihil assumenda, voluptatum
-            veniam necessitatibus, id quaerat nobis?
+            Embark on a journey of learning with our comprehensive video courses. Discover the secrets of successful video creation and enhance your skills. 
           </p>
           <div class="chapter-gallery">
             <div class="gallery-item">
@@ -120,66 +158,76 @@
             </div>
             <div class="gallery-item">
               <img class="gal-image" src="./images/description-2.jpg" />
-              <strong>Set clear objectives and goals.</strong>
+              <strong>
+                Plan Layout And Design Elements
+                </strong> 
             </div>
             <div class="gallery-item">
               <img class="gal-image" src="./images/description-3.jpg" />
-              <strong>Set clear objectives and goals.</strong>
+              <strong>
+                Sketch Creative Concepts
+                </strong>
             </div>
             <div class="gallery-item">
               <img class="gal-image" src="./images/description-4.jpg" />
-              <strong>Set clear objectives and goals.</strong>
+              <strong>
+                Establish Strong Call-to-Actions
+                </strong>
             </div>
             <div class="gallery-item">
               <img class="gal-image" src="./images/description-5.jpg" />
-              <strong>Set clear objectives and goals.</strong>
+              <strong>
+                Choose High-Quality HTML Templates
+                </strong>
             </div>
             <div class="gallery-item">
               <img class="gal-image" src="./images/description-6.jpg" />
-              <strong>Set clear objectives and goals.</strong>
+              <strong>
+                Create Impressive Layout Previews
+                </strong>
             </div>
             <div class="gallery-item">
               <img class="gal-image" src="./images/description-7.jpg" />
-              <strong>Set clear objectives and goals.</strong>
+              <strong>
+                Master Landing Page Coding Techniques
+                </strong>
             </div>
             <div class="gallery-item">
               <img class="gal-image" src="./images/description-8.jpg" />
-              <strong>Set clear objectives and goals.</strong>
+              <strong>
+                Launch Your Project Successfully Online
+                </strong>
             </div>
           </div>
         </div>
       </section>
-      <section class="chapter-summary-section">
+      <section id="course-summary" class="chapter-summary-section">
         <div class="chapter-summary-container">
           <h1 class="chapter-summary-heading">Main course chapters</h1>
           <div class="shape"><span>&&&&&</span></div>
           <p class="chapter-summary-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum sed
-            quibusdam ipsam porro obcaecati corrupti itaque impedit.
+            Explore the core concepts and techniques covered in our video course. Each chapter is designed to equip you with essential skills for video creation. 
           </p>
           <div class="summary-card-flex">
             <div class="card-item">
               <img src="./images/chapters-icon-1.svg" />
-              <strong>Lorem ipsum dolor sit amet.</strong>
+              <strong>Setting Clear Objectives</strong>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente, tempore.
+                Learn how to define clear objectives and goals for your video projects, ensuring focus and direction 
               </p>
             </div>
             <div class="card-item">
-              <img src="./images/chapters-icon-1.svg" />
-              <strong>Lorem ipsum dolor sit amet.</strong>
+              <img src="./images/chapters-icon-2.svg" />
+              <strong>Content Creation Strategies</strong>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente, tempore.
+                Dive into effective content creation strategies that resonate with your audience 
               </p>
             </div>
             <div class="card-item">
-              <img src="./images/chapters-icon-1.svg" />
-              <strong>Lorem ipsum dolor sit amet.</strong>
+              <img src="./images/chapters-icon-3.svg" />
+              <strong>Coding Essentials</strong>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente, tempore.
+                Explore the fundamentals of coding for video projects, including HTML, CSS, and JavaScript 
               </p>
             </div>
           </div>
@@ -198,57 +246,29 @@
               <div class="objective-heading">Setting Clear Objective</div>
 
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                sit dolorem dignissimos beatae rem libero cumque voluptas et
-                aliquam illo, quae perspiciatis aspernatur! Qui, velit sit.
-                Laudantium, est? Eius, eveniet.
+                1.1 Learn to set clear and achievable objectives for your video projects, ensuring alignment with your overall goals. 
               </p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                sit dolorem dignissimos beatae rem libero cumque voluptas et
-                aliquam illo, quae perspiciatis aspernatur! Qui, velit sit.
-                Laudantium, est? Eius, eveniet.
+                1.2 Explore strategies for defining specific objectives that guide the direction of your project and facilitate success. 
               </p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                sit dolorem dignissimos beatae rem libero cumque voluptas et
-                aliquam illo, quae perspiciatis aspernatur! Qui, velit sit.
-                Laudantium, est? Eius, eveniet.
+                1.3 Understand the importance of setting measurable objectives to evaluate the effectiveness of your video content. 
               </p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                sit dolorem dignissimos beatae rem libero cumque voluptas et
-                aliquam illo, quae perspiciatis aspernatur! Qui, velit sit.
-                Laudantium, est? Eius, eveniet.
-              </p>
+             
             </div>
             <div class="objective">
               <div class="objective-heading">Setting Clear Objective</div>
 
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                sit dolorem dignissimos beatae rem libero cumque voluptas et
-                aliquam illo, quae perspiciatis aspernatur! Qui, velit sit.
-                Laudantium, est? Eius, eveniet.
+                2.1 Discover effective content creation strategies tailored to engage your target audience and convey your message effectively. 
               </p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                sit dolorem dignissimos beatae rem libero cumque voluptas et
-                aliquam illo, quae perspiciatis aspernatur! Qui, velit sit.
-                Laudantium, est? Eius, eveniet.
+                2.2 Learn to craft compelling video content that resonates with viewers and inspires action, using storytelling and visual techniques. 
               </p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                sit dolorem dignissimos beatae rem libero cumque voluptas et
-                aliquam illo, quae perspiciatis aspernatur! Qui, velit sit.
-                Laudantium, est? Eius, eveniet.
+                2.3 Explore methods for optimizing content creation processes to streamline production and maximize impact. 
               </p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                sit dolorem dignissimos beatae rem libero cumque voluptas et
-                aliquam illo, quae perspiciatis aspernatur! Qui, velit sit.
-                Laudantium, est? Eius, eveniet.
-              </p>
+              
             </div>
           </div>
         </div>
@@ -275,7 +295,7 @@
           </div>
         </div>
       </section>
-      <section class="takeaways-section">
+      <section id="takeaways" class="takeaways-section">
         <div class="takeaways-container">
           <h1 class="takeaways-heading">Key Takeaways</h1>
           <div class="shape"><span>&&&&&</span></div>
@@ -287,49 +307,49 @@
             <div class="takeaway-card">
               <i class="fa-solid fa-rocket fa-3x" style="color: #fd556c"></i>
               <div class="takeaway-text-wrap">
-                <strong> Enhanced Skills </strong>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <strong> Enhanced Skills - Develop </strong>
+                <p>advanced skills in web design & development </p>
               </div>
             </div>
             <div class="takeaway-card">
-              <i class="fa-solid fa-rocket fa-3x" style="color: #fd556c"></i>
+              <i class="fas fa-globe fa-3x " style="color: #fd556c"></i>
               <div class="takeaway-text-wrap">
-                <strong> Enhanced Skills </strong>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <strong> Global Perspective - Gain </strong>
+                <p>insights into industry trends and best practices </p>
               </div>
             </div>
             <div class="takeaway-card">
-              <i class="fa-solid fa-rocket fa-3x" style="color: #fd556c"></i>
+              <i class="fas fa-cloud fa-3x" style="color: #fd556c"></i>
               <div class="takeaway-text-wrap">
-                <strong> Enhanced Skills </strong>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <strong> Cloud Technology - Explore </strong>
+                <p>the latest cloud technologies and tools </p>
               </div>
             </div>
             <div class="takeaway-card">
-              <i class="fa-solid fa-rocket fa-3x" style="color: #fd556c"></i>
+              <i class="fas fa-user fa-3x" style="color: #fd556c"></i>
               <div class="takeaway-text-wrap">
-                <strong> Enhanced Skills </strong>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <strong> Networking - Connect with  </strong>
+                <p>fellow professionals and expand your network </p>
               </div>
             </div>
             <div class="takeaway-card">
-              <i class="fa-solid fa-rocket fa-3x" style="color: #fd556c"></i>
+              <i class="fas fa-cog fa-3x " style="color: #fd556c"></i>
               <div class="takeaway-text-wrap">
-                <strong> Enhanced Skills </strong>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <strong>Problem-Solving - Enhance </strong>
+                <p>your problem-solving abilities and critical thinking skills </p>
               </div>
             </div>
             <div class="takeaway-card">
-              <i class="fa-solid fa-rocket fa-3x" style="color: #fd556c"></i>
+              <i class="fas fa-server fa-3x " style="color: #fd556c"></i>
               <div class="takeaway-text-wrap">
-                <strong> Enhanced Skills </strong>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <strong>Technical Proficiency - Increase</strong>
+                <p>LImprove your technical proficiency and stay ahead in the digital landscape.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="course-detail-section">
+      <section id="author" class="course-detail-section">
         <div class="course-image">
           <img src="images/details.png" />
         </div>
@@ -337,9 +357,7 @@
           <h1>Course Details</h1>
           <div class="shape" style="width: 50px"><span>&&&&&</span></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            similique iure molestias? Velit aut quibusdam iusto maxime sapiente,
-            exercitationem quo.
+            Gain insight into the course curriculum, structure, and what to expect throughout your learning journey.
           </p>
           <button class="see-details-button">See Details</button>
         </div>
@@ -347,9 +365,7 @@
           <h1>Author Details</h1>
           <div class="shape" style="width: 50px"><span>&&&&&</span></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            similique iure molestias? Velit aut quibusdam iusto maxime sapiente,
-            exercitationem quo.
+            Learn about the author's background, expertise, and contributions to the course content. 
           </p>
 
           <div class="author-feature">
@@ -364,14 +380,14 @@
               class="fa-solid fa-circle-arrow-right"
               style="color: #fd556c"
             ></i>
-            <strong>Expertise: </strong> Lorem ipsum dolor sit amet.
+            <strong>Experience: </strong> Lorem ipsum dolor sit amet.
           </div>
           <div class="author-feature">
             <i
               class="fa-solid fa-circle-arrow-right"
               style="color: #fd556c"
             ></i>
-            <strong>Expertise: </strong> Lorem ipsum dolor sit amet.
+            <strong>Skills: </strong> Lorem ipsum dolor sit amet.
           </div>
 
           <button class="see-details-button">See Details</button>
@@ -387,32 +403,30 @@
             <div class="stats-report">
               <div class="stats-data">
                 <h1>2000+</h1>
-                <p>Lorem</p>
+                <p>Happy Users</p>
               </div>
               <div class="stats-data">
-                <h1>2000+</h1>
-                <p>Lorem</p>
+                <h1>300+</h1>
+                <p>Issues Solved</p>
               </div>
               <div class="stats-data">
-                <h1>2000+</h1>
-                <p>Lorem</p>
+                <h1>100+</h1>
+                <p>Good reviews</p>
               </div>
               <div class="stats-data">
-                <h1>2000+</h1>
-                <p>Lorem</p>
+                <h1>50+</h1>
+                <p>Case Studies</p>
               </div>
             </div>
             <div class="stats-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus facilis alias debitis vero vitae perspiciatis laborum
-              rem commodi beatae eaque!
+              Tutor is probably one of the best video courses on landing page making in the web industry 
             </div>
 
             <button class="stats-button">Get The Course</button>
           </div>
         </div>
       </section>
-      <section class="newsletter-section">
+      <section id="socials" class="newsletter-section">
         <h1>Subscribe to our newsletter</h1>
         <p>Stay updated with latest news. Subscribe to our daily newsletter.</p>
         <input type="text" placeholder="Enter Email." />
